@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
 const HeroSection = () => {
   return (
     <section className="md:py-10 py-10 bg-gradient-to-r from gray-00 to-gray-200 spacey-10">
@@ -6,10 +9,14 @@ const HeroSection = () => {
         <p className="text-lg mb-4">
           Unlock Your Potential with Our Full-Stack Web Development Bootcamp
         </p>
+        <p className="text-center text-lg">Course duration: 9 month</p>
+
+        <Badge color="red" className="p-4 mt-4 text-lg">class starting from May-06-2024</Badge>
+
+
+        
         <div className="flex gap-4 justify-center pt-5">
-          <button className="bg-orange-800 text-white px-5 py-2 rounded-md text-lg font-bold">
-            Get Started
-          </button>
+          <Button asChild variant="destructive"><Link href='/auth/register'>Get Started</Link></Button>
         </div>
       </div>
     </section>

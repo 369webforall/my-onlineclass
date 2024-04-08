@@ -8,6 +8,7 @@ const Course = () => {
         'React',
         'Tailwind CSS',
         'Next.js',
+        'State Management',
         'TypeScript',
         'Authentication',
         'Next-Auth',
@@ -20,23 +21,26 @@ const Course = () => {
         'Node.js',
         'Express',
         'MongoDB',
-        'MySQL',
+        'SQL',
         'PostgreSQL',
         'Prisma',
-        'Serverless Backend'
+        'Serverless Backend',
+        'Backend communication',
+        'Websocket'
       ];
 
       const devOpsCourses = [
         'Docker',
         'Turbo & Monorepo',
-        'Git',
+        'Git & Github',
+        'Hosting',
         'Continuous Integration and Continuous Deployment (CI/CD)',
         'AWS hosting',
         
       ];
                   
   return (
-    <div className='max-w-6xl mx-auto flex gap-4 flex-1 my-5'>
+    <div className='max-w-6xl mx-auto gap-4 flex-1 md:flex my-5'>
         <CourseCard title="FrontEnd" courses={frontendCourses}/>
         <CourseCard title="BackEnd" courses={backendCourses}/>
         <CourseCard title="DevOps" courses={devOpsCourses}/>
