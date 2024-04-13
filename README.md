@@ -6,3 +6,4 @@ npx prisma migrate dev
 
 npx prisma db push
 
+prisma generate && prisma migrate deploy && next build
